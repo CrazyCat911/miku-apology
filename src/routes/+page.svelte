@@ -64,17 +64,17 @@ ${sender}
 
 <label>
 	Who is this apology letter for?
-	<input placeholder="Mom" bind:value={addressee} />
+	<input placeholder="e. g. Mom" bind:value={addressee} />
 </label>
 
 <label>
-	What are you apologizing for?
-	<input placeholder="I spent $300 on anime figures" bind:value={crime} />
+	What did you do that requires an apology?
+	<input placeholder="e. g. I spent $300 on anime figures" bind:value={crime} />
 </label>
 
 <label>
 	Who are you?
-	<input placeholder="A Miku fan" bind:value={sender} />
+	<input placeholder="e. g. A Miku fan" bind:value={sender} />
 </label>
 
 <h2>Here is your letter!</h2>
@@ -90,4 +90,4 @@ ${sender}
 </div>
 
 <button onclick={regenerate}>Regenerate!</button>
-<button onclick={copy}>Copy Letter!</button>
+<button onclick={copy}>Copy Letter to Clipboard!</button>
