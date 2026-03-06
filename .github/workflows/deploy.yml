@@ -18,18 +18,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4.2.0
+
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: '22'
-
-      - name: Install pnpm
-        run: npm install -g pnpm
+          cache: 'pnpm'
 
       - name: Install dependencies
         run: pnpm install
 
       - name: Build
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: pnpm run build
 
       - name: Configure GitHub Pages
