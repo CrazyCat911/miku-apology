@@ -61,7 +61,7 @@ ${sender}
 	}
 </script>
 
-<h1>Miku Apology Generator</h1>
+<h1>Miku Apology Letter Generator</h1>
 
 <label>
 	Who is this apology letter for?

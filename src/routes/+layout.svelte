@@ -7,6 +7,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Miku Apology Letter Generator</title>
 </svelte:head>
 
 {@render children()}
