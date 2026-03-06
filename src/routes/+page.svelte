@@ -6,19 +6,19 @@
 	let sender = $state('');
 
 	const excuses = [
-		'Miku said it was probably fine.',
-		'Miku told me to follow my dreams.',
+		'Miku said it was probably fine',
+		'Miku told me to follow my dreams',
 		'Miku nodded and I took that as permission',
-		'Miku gave explicit approval of this action.',
-		'Hatsune Miku said she will love me anyway.'
+		'Miku gave explicit approval of this action',
+		'Hatsune Miku said she will love me anyway'
 	];
 
 	const regrets = [
-		'I will reflect on my actions with Miku.',
-		'I will try to make better choices in the future for Miku.',
-		'I promise to reconsider my life decisions and Miku addiction.',
-		'I will attempt to improve moving forward so that I can be with Miku.',
-		'I will try to touch grass.'
+		'I will reflect on my actions with Miku',
+		'I will try to make better choices in the future for Miku',
+		'I promise to reconsider my life decisions and Miku addiction',
+		'I will attempt to improve moving forward so that I can be with Miku',
+		'I will try to touch grass'
 	];
 
 	const closings = [
@@ -38,6 +38,7 @@
 		regret = choice(regrets);
 		closing = choice(closings);
 	}
+
 	function copy() {
 		const letterText = `
 Dear ${addressee},
@@ -81,8 +82,8 @@ ${sender}
 <div>
 	<p>Dear {addressee},</p>
 	<p>I am sorry that {crime}.</p>
-	<p>{excuse}</p>
-	<p>{regret}</p>
+	<p>{excuse}.</p>
+	<p>{regret}.</p>
 	<p>
 		{closing},<br />
 		{sender}
